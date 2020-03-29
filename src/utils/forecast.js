@@ -14,7 +14,7 @@ const forecast = (latitude, longitude, callback) => {
         `It is currently ${
           data.temperature
         } degrees out. There is a ${data.precipProbability *
-          100}% chance of rain`
+          100}% chance of rain. It will be ${data.summary} today.`
       );
     }
   });
